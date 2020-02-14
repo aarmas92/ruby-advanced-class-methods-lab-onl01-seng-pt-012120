@@ -1,4 +1,4 @@
-require 'pry'
+ require 'pry'
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -22,7 +22,8 @@ class Song
     song.name = title
     song
   end
-def self.create_by_name(title) 
+  
+  def self.create_by_name(title) 
     song = self.create
     song.name = title
     song
